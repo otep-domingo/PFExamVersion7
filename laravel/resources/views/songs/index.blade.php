@@ -40,8 +40,8 @@
                         <td>{{ $song->category }}</td>
                         <td>{{ $song->singer }}</td>
                         <td>
-                            <form action="{{ route('songs.destroy',$song->id) }}" method="Post">
-                                <a class="btn btn-primary" href="{{ route('songs.edit',$song->id) }}">Edit</a>
+                            <form action="" method="Post">
+                                <a class="btn btn-primary" href="{{ route('songs.show',$song->id) }}">View</a>
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger">Delete</button>
