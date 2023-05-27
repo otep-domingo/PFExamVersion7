@@ -18,7 +18,4 @@ use App\Http\Controllers\SongsController;
     [SongsController::class, 'index'];
 });*/
 
-
-//Route::get('/songs', [SongsController::class, 'index']);
-
 Route::resource('songs', SongsController::class);
